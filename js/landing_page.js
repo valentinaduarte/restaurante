@@ -3,30 +3,46 @@ const buscador = document.querySelector('#buscador');
 
 const contenido = document.querySelector('#contenido');
 contenido.innerHTML=`
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="../images/foto_carusel1.png">
+                <img src="../images/foto_carusel_1.png" class="d-block w-100" ">
+                <div class="carousel-caption d-none d-md-block">
+                <h1>Tortas</h1>
+                <p> Explora los contenidos mas exquisitos que tenemos para tus fechas especiales.</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../images/foto_carusel2.jpg">
+                <img src="../images/foto_carusel_2.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                <h1>Postres</h1>
+                <p>Observa un bosquejo de la gran variedad de postres para tus eventos recreativos, empresariales y familiares</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="../images/foto_carusel3.jpg">
+                <img src="../images/foto_carusel_3.jpg" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                <h1>Comas Diabeticos</h1>
+                <p>Goza de nuestra gran variedad para calmar cualquier antojo</p>
+                </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 `
+const btnLogin = document.querySelector('#btn_login');
+const btnGallery = document.querySelector('#btn_gallery');
+
+

@@ -34,3 +34,25 @@ body{
     border-radius: 1.2rem;
     padding: 0.8rem;
 }
+.carousel-control-next{
+    color: white;
+    text-decoration: none;
+}
+.carousel-control-prev{
+    color: white;
+    text-decoration: none;
+}
+footer{
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: rgb(159, 102, 102);
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: auto auto auto auto;
+}
+footer h1{
+    color: rgb(122, 39, 39);
+}
+footer h3{
+    color:white;
+}
